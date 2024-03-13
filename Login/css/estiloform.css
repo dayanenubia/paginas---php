@@ -1,0 +1,74 @@
+﻿body {
+    background-color: #E1EAF2;
+    margin: 0;
+	padding: 0;
+	font-family: Tahoma, Verdana, Arial, Sans-Serif, Times New Roman;
+}
+
+#tformulario{
+    background-color: rgba(255,255,255,255);
+    margin: 100px auto 100px auto;
+	padding: 10px;
+    width: 550px;
+    min-height:180px;
+	box-shadow:0px 2px 6px 4px grey;
+	-webkit-box-shadow: 0px 2px 6px 4px grey;
+	-moz-box-shadow: 0px 2px 6px 4px grey;
+	
+}
+
+#tformulario h1{
+	margin: 0;
+	padding: 10px;
+	color:#326C99;
+	font-weight: bold;
+}
+
+
+#tformulario input[type=text],input[type=password]
+{
+	margin-left:0px;
+	padding: 8px;
+}
+
+.botao {
+	background-color: #273747;
+	color: white;
+	padding: 8px;
+	box-shadow: 2px 2px 1px #aaaaaa;
+	clear: both;
+	margin-top: 10px;
+	margin-left:0px;
+	-msie-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    font-weight: bold;
+	outline:none;
+}
+.botao:hover {
+  background: #326C99;
+}
+
+#geral{
+    background-color: rgba(255,255,255,255);
+    margin: 100px auto;
+	margin-top:20px;
+    width: 996px;
+	box-shadow:0px 2px 6px 4px grey;
+	-webkit-box-shadow: 0px 2px 6px 4px grey;
+	-moz-box-shadow: 0px 2px 6px 4px grey;
+}
+
+.login-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  }
+
+  #login-image {
+	width: 80px; /* Ajuste a largura de acordo com sua imagem */
+	height: auto;
+  }
+	#button-container{
+	align-content: center;
+}
