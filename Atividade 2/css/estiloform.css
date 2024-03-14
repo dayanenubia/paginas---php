@@ -1,75 +1,68 @@
 ﻿body {
-    background-color: #E1EAF2;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     margin: 0;
-	padding: 0;
-	font-family: Tahoma, Verdana, Arial, Sans-Serif, Times New Roman;
+    padding: 0;
 }
 
-#tformulario{
-    background-color: rgba(255,255,255,255);
-    margin: 100px auto 100px auto;
-	padding: 10px;
-    width: 550px;
-    min-height:180px;
-	box-shadow:0px 2px 6px 4px grey;
-	-webkit-box-shadow: 0px 2px 6px 4px grey;
-	-moz-box-shadow: 0px 2px 6px 4px grey;
-}
-
-#tformulario h1{
-	margin: 0;
-	padding: 10px;
-	color:#326C99;
-	font-weight: bold;
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto; /* Alteração para centralizar */
 }
 
 
-#tformulario input[type=text],input[type=password]
-{
-	margin-left:0px;
-	padding: 8px;
+.form-container {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.botao {
-	background-color: #273747;
-	color: white;
-	padding: 8px;
-	box-shadow: 2px 2px 1px #aaaaaa;
-	clear: both;
-	margin-top: 10px;
-	margin-left:0px;
-	-msie-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -webkit-border-radius: 8px;
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.result {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.result p {
+    color: #333;
+    font-size: 18px;
     font-weight: bold;
-	outline:none;
-}
-.botao:hover {
-  background: #326C99;
-}
-
-#geral{
-    background-color: rgba(255,255,255,255);
-    margin: 100px auto;
-	margin-top:20px;
-    width: 996px;
-	box-shadow:0px 2px 6px 4px grey;
-	-webkit-box-shadow: 0px 2px 6px 4px grey;
-	-moz-box-shadow: 0px 2px 6px 4px grey;
-}
-
-.login-container {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-  }
-
-  #login-image {
-	width: 80px; /* Ajuste a largura de acordo com sua imagem */
-	height: auto;
-  }
 	
-  #button-container {
-	text-align: center;
-	/* Outros estilos... */
-  }
+}
