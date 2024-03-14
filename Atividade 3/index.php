@@ -1,33 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Calculadora de Fatorial</title>
+    <title>Identificar o maior número</title>
 </head>
 <body>
-    <h2>Calculadora de Fatorial</h2>
-    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
-        Digite um número inteiro:
-        <input type="number" name="numero" min="0" required>
-        <input type="submit" name="submit" value="Calcular">
+    <h2>Identificar o maior número</h2>
+    <form method="post">
+        <label for="num1">Número 1:</label>
+        <input type="number" name="num1" id="num1" required><br><br>
+        
+        <label for="num2">Número 2:</label>
+        <input type="number" name="num2" id="num2" required><br><br>
+        
+        <label for="num3">Número 3:</label>
+        <input type="number" name="num3" id="num3" required><br><br>
+        
+        <input type="submit" name="submit" value="Identificar o maior número">
     </form>
 
     <?php
-    function calcularFatorial($numero) {
-        if ($numero == 0 || $numero == 1) {
-            return 1;
-        } else {
-            return $numero * calcularFatorial($numero - 1);
-        }
-    }
+    if(isset($_POST['submit'])){
+        $num1 = $_POST['num1'];
+        $num2 = $_POST['num2'];
+        $num3 = $_POST['num3'];
 
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $numero = $_POST["numero"];
+        $maior_numero = $num1;
 
-        if (filter_var($numero, FILTER_VALIDATE_INT) && $numero >= 0) {
-            echo "<h3>O fatorial de $numero é: " . calcularFatorial($numero) . "</h3>";
-        } else {
-            echo "<h3>Por favor, digite um número inteiro não negativo.</h3>";
+        if ($num2 > $maior_numero) {
+            $maior_numero = $num2;
         }
+
+        if ($num3 > $maior_numero) {
+            $maior_numero = $num3;
+        }
+
+        echo "<p>O maior número é $maior_numero</p>";
     }
     ?>
 </body>

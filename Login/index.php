@@ -24,12 +24,6 @@
         <input type="submit" value="Acessar" class="botao"/>
         <input type="button" value="Limpar" class="botao" onclick="limparCampo()">
       </div>
-  
-   
-
-    
-
-    
 
       <?php
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
