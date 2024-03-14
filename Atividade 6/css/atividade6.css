@@ -1,0 +1,67 @@
+﻿body {
+    background-color: #f4f4f4; /* Altere a cor de fundo para algo mais suave */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Fonte mais comum */
+}
+
+#tformulario {
+    background-color: #fff;
+    margin: 100px auto;
+    padding: 20px;
+    width: 70%;
+    max-width: 500px; /* Limita a largura máxima para melhor legibilidade */
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Sombra mais suave */
+}
+
+#tformulario h2 {
+    margin: 0 0 15px; /* Adiciona espaço abaixo do título */
+    color: #333; /* Cor mais escura para o título */
+}
+
+#tformulario label {
+    display: block;
+    margin-bottom: 10px; /* Espaçamento abaixo das etiquetas */
+}
+
+#tformulario input[type="number"] {
+    width: calc(100% - 16px); /* Ajusta a largura do input */
+    padding: 10px;
+    border: 1px solid #ccc; /* Borda suave */
+    border-radius: 5px;
+}
+
+#tformulario input[type="submit"] {
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transição suave */
+}
+
+#tformulario input[type="number"] {
+    width: calc(100% - 16px); /* Ajusta a largura do input */
+    padding: 10px;
+    border: 1px solid #ccc; /* Borda suave */
+    border-radius: 5px;
+    margin-bottom: 10px; /* Adiciona espaço abaixo do input */
+}
+
+#button-container {
+    margin-top: 10px; /* Adiciona espaço acima do botão container */
+}
+
+#tformulario input[type="submit"]:hover {
+    background-color: #0056b3; /* Cor de fundo alterada ao passar o mouse */
+}
+
+#tformulario p {
+    margin-top: 15px; /* Adiciona espaço acima dos parágrafos */
+}
+
+#tformulario p:first-of-type {
+    margin-top: 0; /* Remove o espaço acima do primeiro parágrafo */
+}
