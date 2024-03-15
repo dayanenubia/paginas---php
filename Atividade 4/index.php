@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/atividade4.css" rel="stylesheet" type="text/css" />
     <title>Calculadora de Fatorial</title>
 </head>
 <body>
     <div id="tformulario">
         <h2>Calculadora de Fatorial</h2>
         <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
-            Digite um número inteiro:
+        <label for="numero">Digite um número inteiro:</label>
             <input type="number" name="numero" min="0" required>
-            <input type="submit" name="submit" value="Calcular">
+            <div id="button-container">
+                <input type="submit" name="submit" value="Calcular">
+            </div>
         </form>
 
         <?php
